@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
  rename = require('gulp-rename'),
  uglify = require('gulp-uglify'),
- babel = require('gulp-babel')
+ babel = require('gulp-babel'),
+ notify = require('gulp-notify')
  
 gulp.task( 'js', function() {
  gulp.src( './js/**.js' )
@@ -14,10 +15,10 @@ gulp.task( 'js', function() {
  )
  .pipe( gulp.dest('./dist') )
  .pipe(
-  notify({
-  message:'Build has been completed',
-  onLast:true
-  })
+ notify({
+ message:'Build has been completed',
+ onLast:true
+ })
 )
 })
 
