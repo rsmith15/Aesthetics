@@ -1,22 +1,17 @@
-<html class="no-js"> 
+<html class='no-js'> 
 <head>
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/main.css">
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<link rel='stylesheet' href='css/normalize.css'>
+	<link rel='stylesheet' href='css/main.css'>
+	<script src='js/vendor/modernizr-2.6.2.min.js'></script>
 </head>
-<body class="demo">		
-	<div id="demo-content">
-
-
-		<div id="loader-wrapper">
-			<div id="loader"></div>
-
-			<div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-
+<body class='d'>		
+	<div id='dc'>
+		<div id='loader-wrapper'>
+			<div id='loader'></div>
+			<div class='loader-section section-left'></div>
+            <div class='loader-section section-right'></div>
 		</div>
-
-		<div id="content">
+		<div id='c'>
 <style>
 #oFloor {
     opacity:0.5;
@@ -29,10 +24,10 @@
     background: #111
 }
 </style>
-<canvas id="staryNight" width="1290" height="800"></canvas>
+<canvas id='staryNight' width='1290' height='800'></canvas>
 <script src='https://cdn.jsdelivr.net/terra/latest/mainfile'></script>
-<script type="text/javascript" src="http://cdn.tonejs.org/latest/Tone.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type='text/javascript' src='http://cdn.tonejs.org/latest/Tone.min.js'></script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
 <script>
 //Reverb and Delay
 var reverb = new Tone.JCReverb(0.4).connect(Tone.Master);
@@ -176,13 +171,13 @@ oceanFloor.animate()
 //Center canvas
 var canvas = document.getElementById('oFloor');
 var style = canvas.style;
-style.marginLeft = "auto";
-style.marginRight = "auto";
+style.marginLeft = 'auto';
+style.marginRight = 'auto';
 var parentStyle = canvas.parentElement.style;
-parentStyle.textAlign = "center";
-parentStyle.width = "100%";
+parentStyle.textAlign = 'center';
+parentStyle.width = '100%';
 var stars = 200
-var context = canvas.getContext("2d")
+var context = canvas.getContext('2d')
 var colorrange = [0,60,240];
 function getRandom(min, max) {
         return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -195,13 +190,13 @@ for (var i = 0; i < stars; i++) {
     sat = getRandom(50,100);
     context.beginPath();
     context.arc(x, y, radius, 0, 360);
-    context.fillStyle = "hsl(" + hue + ", " + sat + "%, 88%)";
+    context.fillStyle = 'hsl(' + hue + ', ' + sat + '%, 88%)';
     context.fill();
 }
 
 //add stars
-var canvas2 = document.getElementById("staryNight")               
-var context2 = canvas2.getContext("2d")
+var canvas2 = document.getElementById('staryNight')               
+var context2 = canvas2.getContext('2d')
 for (var i = 0; i < stars; i++) {
     var x = Math.random() * canvas2.offsetWidth;
     var y = Math.random() * canvas2.offsetHeight,
@@ -210,7 +205,7 @@ for (var i = 0; i < stars; i++) {
     sat = getRandom(50,100);
     context2.beginPath();
     context2.arc(x, y, radius, 0, 360);
-    context2.fillStyle = "hsl(" + hue + ", " + sat + "%, 88%)";
+    context2.fillStyle = 'hsl(' + hue + ', ' + sat + '%, 88%)';
     context2.fill();
 }
 
@@ -219,9 +214,9 @@ for (var i = 0; i < stars; i++) {
 	</div>
 	<!-- /Demo content -->
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/main.js"></script>
+	<script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+	<script>window.jQuery || document.write('<script src='js/vendor/jquery-1.9.1.min.js'><\/script>')</script>
+	<script src='js/main.js'></script>
 
 </body>
 </html>
