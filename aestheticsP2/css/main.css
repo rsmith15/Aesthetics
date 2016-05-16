@@ -1,9 +1,4 @@
       
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
@@ -11,9 +6,6 @@
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 p {
     line-height: 1.33em;
     color: #7E7E7E;
@@ -42,8 +34,8 @@ h1 {
     border: 3px solid transparent;
     border-top-color: #00ccff;
 
-    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite; 
 
     z-index: 1001;
 }
@@ -59,8 +51,8 @@ h1 {
         border: 3px solid transparent;
         border-top-color: #00ff99;
 
-        -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-        animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+        -webkit-animation: spin 3s linear infinite; 
+        animation: spin 3s linear infinite; 
     }
 
     #loader:after {
@@ -74,32 +66,32 @@ h1 {
         border: 3px solid transparent;
         border-top-color: #ff33cc;
 
-        -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-          animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+        -webkit-animation: spin 1.5s linear infinite; 
+          animation: spin 1.5s linear infinite; 
     }
 
     @-webkit-keyframes spin {
         0%   { 
-            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(0deg);  /* IE 9 */
-            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotate(0deg);  
+            -ms-transform: rotate(0deg);  
+            transform: rotate(0deg);  
         }
         100% {
-            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(360deg);  /* IE 9 */
-            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotate(360deg);  
+            -ms-transform: rotate(360deg);  
+            transform: rotate(360deg);  
         }
     }
     @keyframes spin {
         0%   { 
-            -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(0deg);  /* IE 9 */
-            transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotate(0deg);  
+            -ms-transform: rotate(0deg);  
+            transform: rotate(0deg);  
         }
         100% {
-            -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: rotate(360deg);  /* IE 9 */
-            transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+            -webkit-transform: rotate(360deg);  
+            -ms-transform: rotate(360deg);  
+            transform: rotate(360deg);  
         }
     }
 
@@ -110,9 +102,9 @@ h1 {
         height: 100%;
         background: #111111;
         z-index: 1000;
-        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
-        -ms-transform: translateX(0);  /* IE 9 */
-        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: translateX(0);  
+        -ms-transform: translateX(0); 
+        transform: translateX(0);  
     }
 
     #loader-wrapper .loader-section.section-left {
@@ -125,18 +117,18 @@ h1 {
 
     /* Loaded */
     .loaded #loader-wrapper .loader-section.section-left {
-        -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(-100%);  /* IE 9 */
-                transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: translateX(-100%);  
+            -ms-transform: translateX(-100%);  
+                transform: translateX(-100%);  
 
         -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
                 transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
     }
 
     .loaded #loader-wrapper .loader-section.section-right {
-        -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateX(100%);  /* IE 9 */
-                transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: translateX(100%);  
+            -ms-transform: translateX(100%);  
+                transform: translateX(100%);  
 
 -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);  
         transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
@@ -150,15 +142,15 @@ h1 {
     .loaded #loader-wrapper {
         visibility: hidden;
 
-        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
-            -ms-transform: translateY(-100%);  /* IE 9 */
-                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+        -webkit-transform: translateY(-100%);  
+            -ms-transform: translateY(-100%);  
+                transform: translateY(-100%);  
 
         -webkit-transition: all 0.3s 1s ease-out;  
                 transition: all 0.3s 1s ease-out;
     }
     
-    /* JavaScript Turned Off */
+    /* if javascript is turned off */
     .no-js #loader-wrapper {
         display: none;
     }
@@ -178,19 +170,12 @@ h1 {
 
 
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
+/*image replacement*/
 
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
-    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -201,18 +186,14 @@ h1 {
     height: 150%;
 }
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
+/*hide screenreaders  */
 
 .hidden {
     display: none !important;
     visibility: hidden;
 }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
+/*hide screenreaders visually*/
 
 .visuallyhidden {
     border: 0;
@@ -225,10 +206,7 @@ h1 {
     width: 1px;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
+/*extend visually hidden*/
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
@@ -240,25 +218,12 @@ h1 {
     width: auto;
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
+/*hide visually from screen readers*/
 
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
 
 .clearfix:before,
 .clearfix:after {
@@ -270,41 +235,27 @@ h1 {
     clear: both;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
 
 .clearfix {
     *zoom: 1;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
+/*print styles*/
 
 @media print {
     * {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        color: #000 !important; 
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -322,9 +273,7 @@ h1 {
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
+ /*dont show links for images*/
 
     .ir a:after,
     a[href^="javascript:"]:after,
@@ -339,7 +288,7 @@ h1 {
     }
 
     thead {
-        display: table-header-group; /* h5bp.com/t */
+        display: table-header-group; 
     }
 
     tr,
@@ -367,9 +316,3 @@ h1 {
         page-break-after: avoid;
     }
 }
-
-/* 
-	Ok so you have made it this far, that means you are very keen to on my code. 
-	Anyway I don't really mind it. This is a great way to learn so you actually doing the right thing:)
-	Follow me @ihatetomatoes
-*/
