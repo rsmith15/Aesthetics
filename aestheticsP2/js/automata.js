@@ -1,8 +1,9 @@
 //Reverb and Delay
-var reverb = new Tone.JCReverb(0.4).connect(Tone.Master);
-var delay = new Tone.FeedbackDelay(0.5);
+var reverb = new Tone.JCReverb(0.4).connect(Tone.Master)
+var delay = new Tone.FeedbackDelay(0.5)
 var samp='A.'
 var count=0
+var rand=0
 
 //load samples into sampler
 var sampler = new Tone.Sampler({

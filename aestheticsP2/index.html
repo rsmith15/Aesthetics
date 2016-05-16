@@ -31,18 +31,18 @@
     margin: 0px;
 }
 </style>
-<script src='js/automata.js'></script>
+<script src='ES2015Script/automata.min.js'></script>
 <canvas id='staryNight' width='1290' height='800'></canvas>
 <script>
 //add stars
-var canvas2 = document.getElementById('staryNight')               
-var context2 = canvas2.getContext('2d')
+var canvas2 = document.getElementById('staryNight');
+var context2 = canvas2.getContext('2d');
 for (var i = 0; i < stars; i++) {
     var x = Math.random() * canvas2.offsetWidth;
     var y = Math.random() * canvas2.offsetHeight,
-    radius = Math.random() * 1.2,
-    hue = colorrange[getRandom(0,colorrange.length - 1)],
-    sat = getRandom(50,100);
+        radius = Math.random() * 1.2,
+        hue = colorrange[getRandom(0, colorrange.length - 1)],
+        sat = getRandom(50, 100);
     context2.beginPath();
     context2.arc(x, y, radius, 0, 360);
     context2.fillStyle = 'hsl(' + hue + ', ' + sat + '%, 88%)';
@@ -50,6 +50,6 @@ for (var i = 0; i < stars; i++) {
 }
 </script>
 </div>
-	<script src='js/main.js'></script>
+	<script src='ES2015Script/main.min.js'></script>
 </body>
 </html>
